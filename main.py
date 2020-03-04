@@ -20,7 +20,7 @@ class InfoForm(FlaskForm):
 def homepage():
     form = InfoForm()
     if form.validate_on_submit():
-        pred = joblib.load("E:\\Data Science\\My Learnings\\DataScience\\01 Linear Regression\\Project1 Reading\\housingmodel.pkl")
+        pred = joblib.load("housingmodel.pkl")
         value = pred.predict([[float(form.Avg_Area_Income.data),
         float(form.Avg_Area_House_Age.data),float(form.Avg_Area_Number_of_Rooms.data),
         float(form.Avg_Area_Number_of_Bedrooms.data),float(form.Area_Population.data)]])[0]

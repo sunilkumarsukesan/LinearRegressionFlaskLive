@@ -1,12 +1,12 @@
 {% extends 'base.html'%}
 {% block content %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand" href="{{url_for('homepage')}}"><u>Home Page</u></a>
+<a style="color:cyan" class="navbar-brand" href="{{url_for('homepage')}}"><u>Home Page</u></a>
 </nav>
 <div class="jumbotron">
 <h1>USA housing prediction</h1>
 </div>
 <div class="container">
-<h1>Here is the predicted price : {{session['value']}}  </h1>
+<h1 >Here is the predicted price : <span style="color:green"> {{session['value']}} </span> </h1>
 </div>
 {% endblock %}

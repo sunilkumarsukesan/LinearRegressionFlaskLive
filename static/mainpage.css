@@ -1,0 +1,8 @@
+#pagenotfound{
+background: url('banner_error_404.jpg')no-repeat center fixed;
+  background-size: cover;
+}
+
+ul{
+  color:#B22222	;
+}
